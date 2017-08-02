@@ -12,6 +12,7 @@
 		133DA5D11F3046580051F9EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133DA5CF1F3046580051F9EF /* Main.storyboard */; };
 		133DA5D31F3046580051F9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133DA5D21F3046580051F9EF /* Assets.xcassets */; };
 		133DA5D61F3046580051F9EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133DA5D41F3046580051F9EF /* LaunchScreen.storyboard */; };
+		133DA5DF1F3046C00051F9EF /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133DA5DE1F3046C00051F9EF /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		133DA5D21F3046580051F9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		133DA5D51F3046580051F9EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		133DA5D71F3046580051F9EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		133DA5DE1F3046C00051F9EF /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133DA5DF1F3046C00051F9EF /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				133DA5CA1F3046580051F9EF /* DeviceConnecitivity_Demo */,
 				133DA5C91F3046580051F9EF /* Products */,
+				133DA5DD1F3046BF0051F9EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				133DA5D71F3046580051F9EF /* Info.plist */,
 			);
 			path = DeviceConnecitivity_Demo;
+			sourceTree = "<group>";
+		};
+		133DA5DD1F3046BF0051F9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				133DA5DE1F3046C00051F9EF /* MultipeerConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF7N2574KF;
 				INFOPLIST_FILE = DeviceConnecitivity_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "VKP.DeviceConnecitivity-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RF7N2574KF;
 				INFOPLIST_FILE = DeviceConnecitivity_Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "VKP.DeviceConnecitivity-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
